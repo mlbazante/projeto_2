@@ -31,8 +31,13 @@ lista_arquivos <- list.files("./dados/raster/variaveis_cortadas_pratica/", full.
 
 vars_stack <-stack(lista_arquivos)
 plot(vars_stack)
+plot(vars_stack[[1]])
+plot(vars_stack[[2]])
+plot(vars_stack[[12]])
 
 ## antes estava acima: plot(vars_stack[[12]])
+
+
 
 ## Verificando os pontos nas variáveis mais um vez. Isso pode ser feito previamente no Qgis. Em termos de verificação de pontos, ou verificar valores de pixel de forma mais rápida, o Qgis pode ser mais apropriado. 
 ## Talvez não seja possível gerar a imagem e código abaixo não funcione a cuse um erro. Por isso é aconselhável que seja feita a verificação dos pontos em cimas das camadas ambientais no Qgis.
